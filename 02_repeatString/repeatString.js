@@ -2,6 +2,9 @@ const repeatString = function(string, num) {
 
     let result = '';
     let i = 0; 
+    if (num < 0) {
+        return "ERROR";
+    } 
     while (i < num) {
         result += string;
         i ++
